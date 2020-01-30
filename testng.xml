@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="tests">
+<test thread-count="5" name="Test">
+  <parameter name="browsers" value="Firefox"/>
+  <classes>
+   <class name="Step_definition.CreateContact"/>
+  <class name="Step_definition.BrowserLogin"/>
+  <class name="Step_definition.Baseclass"/>
+  <class name="runner_file.runner"/>
+  </classes>
+  </test>
+
+   <!-- 
+  <test thread-count="5" name="Test">
+  <parameter name="one" value="internetexplorer"/>
+  <classes>
+  <class name="Step_definition.BrowserLogin"/>
+  <class name="Step_definition.CreateContact"/>
+  </classes>
+  </test>  -->
+
+  <!--  <test thread-count="5" name="Test">
+  <parameter name="one" value="chrome"/>
+  <classes>
+  <class name="Step_definition.BrowserLogin"/>
+  <class name="Step_definition.CreateContact"/>
+  </classes>
+  </test>
+   -->
+ 
+</suite> <!-- Suite -->
